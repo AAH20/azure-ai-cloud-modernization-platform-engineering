@@ -108,4 +108,4 @@ For architecture, implementation and managed-service engagements, visit [A2Z SOC
 
 ## License and security
 
-Apache-2.0. See [LICENSE](LICENSE) and [SECURITY.md](SECURITY.md).
+MIT. See [LICENSE](LICENSE) and [SECURITY.md](SECURITY.md).
