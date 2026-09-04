@@ -1,0 +1,38 @@
+{
+  "workload_id": "order-api-eu-001",
+  "application": {
+    "name": "Global Order API",
+    "strategic_value": "high",
+    "technical_debt": "high",
+    "differentiation": "high",
+    "cloud_ready": true,
+    "container_ready": true,
+    "retire_candidate": false,
+    "saas_replacement_available": false
+  },
+  "current_state": {
+    "monthly_infrastructure_cost": 18500,
+    "monthly_operations_labor_cost": 12000
+  },
+  "target_state": {
+    "region": "westeurope",
+    "estimated_azure_cost": 11200,
+    "estimated_model_cost": 850,
+    "estimated_operations_labor_cost": 4800,
+    "rto_hours": 2,
+    "rpo_hours": 0.25,
+    "private_data_path": true,
+    "rollback_tested": true
+  },
+  "business": {
+    "migration_cost": 95000,
+    "monthly_revenue_enabled": 22000
+  },
+  "constraints": {
+    "must_remain_on_premises": false,
+    "allowed_regions": ["westeurope", "northeurope"],
+    "max_rto_hours": 4,
+    "max_rpo_hours": 1
+  },
+  "approvals": {"business_owner": true}
+}

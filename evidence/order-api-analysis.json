@@ -1,0 +1,57 @@
+{
+  "analysis_digest_sha256": "d2c1309da7b13737b41e40b38e77bec4ad606ee3ad50f4ec2a29814ee0a96e4f",
+  "decision": "promote",
+  "disposition": {
+    "reasons": [
+      "Application is cloud-ready.",
+      "Container packaging is available."
+    ],
+    "recommendation": "replatform"
+  },
+  "economics": {
+    "annual_net_value": 427800.0,
+    "baseline_monthly_cost": 30500.0,
+    "migration_cost": 95000.0,
+    "monthly_capacity_value": 7200.0,
+    "monthly_contribution_improvement": 35650.0,
+    "monthly_revenue_enabled": 22000.0,
+    "payback_months": 2.66,
+    "target_monthly_cost": 16850.0,
+    "three_year_roi_percent": 1250.9
+  },
+  "evidence_boundary": "Modeled from declared inputs; not evidence of an Azure deployment.",
+  "release_gates": [
+    {
+      "id": "nonnegative-value",
+      "passed": true,
+      "requirement": "Target must produce positive monthly contribution improvement."
+    },
+    {
+      "id": "recovery-objectives",
+      "passed": true,
+      "requirement": "Target RTO and RPO must satisfy business limits."
+    },
+    {
+      "id": "data-residency",
+      "passed": true,
+      "requirement": "Deployment region must be explicitly allowed."
+    },
+    {
+      "id": "private-data-path",
+      "passed": true,
+      "requirement": "Production data services require a private path."
+    },
+    {
+      "id": "rollback",
+      "passed": true,
+      "requirement": "A tested rollback is required before promotion."
+    },
+    {
+      "id": "owner-approval",
+      "passed": true,
+      "requirement": "Business owner approval is required."
+    }
+  ],
+  "schema_version": "1.0",
+  "workload_id": "order-api-eu-001"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "defaultDecision": "hold",
+  "productionRules": [
+    "positive contribution improvement",
+    "RTO and RPO within declared limits",
+    "approved data-residency region",
+    "private production data path",
+    "successful rollback exercise",
+    "business-owner approval"
+  ],
+  "aiAuthority": "recommend-only",
+  "mutationAuthority": "deterministic-workflow-with-human-approval"
+}
